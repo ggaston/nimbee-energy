@@ -1,0 +1,24 @@
+{
+  "name": "nimbee-energy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggaston/nimbee-energy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggaston/nimbee-energy/issues"
+  },
+  "homepage": "https://github.com/ggaston/nimbee-energy#readme",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
