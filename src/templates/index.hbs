@@ -8,14 +8,14 @@ data: cs/index.json
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Starter Snowpack App" />
+  <meta name="description" content="Nembee" />
   <!-- CSS Reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 
   <!-- Milligram CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <title>Starter Snowpack App</title>
+  <title>{{headline}}</title>
 </head>
 
 <body>
@@ -38,6 +38,7 @@ data: cs/index.json
             <div class="column">{{> card}}</div>
             {{/each}}
           </div>
+          {{> popover}}
         </div>
       </div>
     </main>
@@ -47,6 +48,45 @@ data: cs/index.json
     </footer>
     
   </div>
+  <script>
+    (function(){
+      let openBtn = document.querySelector('[data-action="open"][data-action-target="popover"]');
+      let closeBtn = document.querySelector('[data-action="close"][data-action-target="popover"]');
+      let popover = document.querySelector('[data-component="popover"]');
+      
+      openBtn.addEventListener('click', openPopover)
+      closeBtn.addEventListener('click', closePopover)
+      document.body.addEventListener('click', closePopover)
+      document.addEventListener('keydown', function(e){
+        if(e.keyCode === 27) {
+          closePopover(e)
+        }
+      });
+
+      function openPopover(e){
+        e.stopPropagation() 
+        let dataTarget = e.currentTarget.dataset;
+        let el = document.querySelector('[data-component="' + dataTarget.actionTarget + '"]')
+
+        if(el) {
+          el.dataset.componentState = 'open'
+        }
+      }
+
+      function closePopover(e){
+        let el = document.querySelector('[data-component="popover"]')
+
+        if(el) {
+          el.dataset.componentState = 'closed'
+        }
+      }
+
+      popover.addEventListener('click', function(e){
+        e.stopPropagation()
+      })
+
+    })()
+  </script>
 </body>
 
 </html>

@@ -3,20 +3,9 @@
   "cards": [
     {
       "headline": "Energy Storage Units",
-      "text": [
-        "On the market since 2017. We are pioneering the energy and mobility transition in Czechia.",
-        "First to put large Battery Energy Storage into operation in Czechia (2017, Solar Global).",
-        "Founding member of the Association of Energy Storage (2017, AKU-BAT).",
-        "Feasibility study of future energy self-sufficient Skoda Auto dealership network (first 4 pilot dealerships) (2018, SkoEnergo).",
-        "Electrifying Skoda Auto dealership network, implementing first own local consumption management, first dealer’s DC Fast Charger in operations (2019, Karireal Trinec).",
-        "Complete infrastructure delivery project of internal charging infrastructure for Prague transportation company (2018, 2019 DPP Prague).",
-        "Delivery of the first certified MOBILE Battery container in Czechia (2019, CE Energy).",
-        "Feasibility Study of charging infrastructure for first ever electromobility Skoda Product Training (CITIGOe iV, SUPERB iV) in Benidorm, Spain (2019, Skoda Auto).",
-        "Charging anywhere – we are delivering on our vision of providing energy anywhere – Charging infrastructure for Audi eTron VIP introduction and test-drives at Kacov Golf Course (2019, Audi).",
-        "Providing complete charging infrastructure at the biggest e-mobility event e-Salon (2019, ABF Letnany).",
-        "Safe and nimble cloud platform for aggregation of various local sources and/or consumptions with the aim to provide support for the new small and mid-sized energy market participants after EU legal Winter package implementation (2020, Nimble Energy)."
-      ],
-      "link": "See more informations"
+      "text":"Sustainable and innovative industrial modular energy storage systems and business solutions applied where temporary green energy is required.",
+      "link": "See more informations",
+      "popover": true
     },
     {
       "headline": "Chytré nabíjení",
@@ -29,6 +18,19 @@
       "link": "Visit website"
 
     }
+  ],
+  "cardsInfo": [
+    "On the market since 2017. We are pioneering the energy and mobility transition in Czechia.",
+    "First to put large Battery Energy Storage into operation in Czechia (2017, Solar Global).",
+    "Founding member of the Association of Energy Storage (2017, AKU-BAT).",
+    "Feasibility study of future energy self-sufficient Skoda Auto dealership network (first 4 pilot dealerships) (2018, SkoEnergo).",
+    "Electrifying Skoda Auto dealership network, implementing first own local consumption management, first dealer’s DC Fast Charger in operations (2019, Karireal Trinec).",
+    "Complete infrastructure delivery project of internal charging infrastructure for Prague transportation company (2018, 2019 DPP Prague).",
+    "Delivery of the first certified MOBILE Battery container in Czechia (2019, CE Energy).",
+    "Feasibility Study of charging infrastructure for first ever electromobility Skoda Product Training (CITIGOe iV, SUPERB iV) in Benidorm, Spain (2019, Skoda Auto).",
+    "Charging anywhere – we are delivering on our vision of providing energy anywhere – Charging infrastructure for Audi eTron VIP introduction and test-drives at Kacov Golf Course (2019, Audi).",
+    "Providing complete charging infrastructure at the biggest e-mobility event e-Salon (2019, ABF Letnany).",
+    "Safe and nimble cloud platform for aggregation of various local sources and/or consumptions with the aim to provide support for the new small and mid-sized energy market participants after EU legal Winter package implementation (2020, Nimble Energy)."
   ],
   "footer": {
     "followUs": "Follow us",

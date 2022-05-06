@@ -9,7 +9,7 @@
     --footer-bg-color: var(--color-black);
     --card-bg-color: var(--color-white);
 
-    --font-color: var(--color-black);
+    --font-color: var(--color-green-dark);
     --font-headline-color: var(--color-white);
     --font-footer-color: var(--color-gray-30);
     --font-footer-headline-color: var(--color-gray-10);
@@ -27,6 +27,7 @@
 
 body {
     background: radial-gradient(ellipse at top right, var(--color-green-light), transparent),var(--color-green-dark);
+    color: var(--font-color);
 }
 
 /* layout */
@@ -50,6 +51,10 @@ h4 {
 
 a:hover {
     text-decoration: underline;
+}
+
+ul {
+    list-style: disc outside;
 }
 
 
@@ -95,7 +100,7 @@ a:hover {
     opacity: .4;
 }
 .card-reveal {
-    visibility: hidden;
+    /* visibility: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,6 +128,7 @@ a:hover {
 }
 .card-link-ico {
     vertical-align: middle;
+    margin-left: .5rem;
 }
 
 .card:hover .card-reveal {
@@ -147,6 +153,38 @@ a:hover {
     color: var(--font-card-headline-color);
     font-size: var(--font-size-l);
     font-weight: 600;
+}
+
+/* Popover */
+.popover {
+    position: absolute;
+    top: 0;
+    display: none;
+    background-color: var(--color-white);
+    margin-right: 2rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.popover[data-component-state="open"]{
+    display: block;
+    z-index: 2;
+}
+.popover-main {
+    padding: 0 4rem 2rem 4rem; 
+}
+.popover-column {
+    padding: 0 2rem;
+    font-size: var(--font-size-s);
+}
+.popover-close {
+    float: right;
+    font-size: var(--font-size-s);
+    padding: 2rem;
+    line-height: 25px;
+}
+.popover-close img {
+    display:inline-block;
+    vertical-align: middle;
 }
 
 /* Hero */
