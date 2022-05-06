@@ -1,0 +1,33 @@
+<div class="popover" data-component-state="closed" data-component="popover">
+    <div class="popover-header">
+
+        <div class="popover-close" data-action="close" data-action-target="popover">
+            {{close}}<img src="assets/img/ico-close.svg" alt="">
+        </div>
+        <div class="card-content">
+            <img src="assets/img/ico-plus.svg" class="card-ico">
+            <h2 class="card-headline">{{cards.[0].headline}}</h2>
+        </div>
+
+    </div>
+    <div class="popover-main">
+        <div class="popover-row row">
+            {{#each cardsInfo}}
+            {{#if @first}}<div class="column">
+                <ul class="popover-column">{{/if}}
+                    {{#if (eq @index 5)}}<div class="column">
+                        <ul class="popover-column">{{/if}}
+                            {{#if (eq @index 9)}}<div class="column">
+                                <ul class="popover-column">{{/if}}
+                                    <li>{{this}}</li>
+                                    {{#if (eq @index 4)}}
+                                </ul>
+                            </div>{{/if}}
+                            {{#if (eq @index 8)}}</ul>
+                    </div>{{/if}}
+                    {{#if @last}}</ul>
+            </div>{{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
