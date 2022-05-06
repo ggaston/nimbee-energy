@@ -4,8 +4,11 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    src: '/',
-    public: '/'
+    'src/data': '/data',
+    'src/partials': '/partials',
+    'src/templates': '/templates',
+    public: '/',
+    'src/assets': '/assets'
   },
   plugins: [
     ['./snowpack-hsb-plugin/index.js', {
