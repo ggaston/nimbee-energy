@@ -31,6 +31,17 @@ body {
 }
 
 /* layout */
+
+/** extend Miligram **/
+.row .column.column-offset-5 {
+    margin-left: 5%;
+}
+
+.row .column.column-15 {
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -121,6 +132,7 @@ ul {
     float: right;
     color: var(--color-white);
     font-size: var(--font-size-xs);
+    cursor: pointer;
 }
 .card-link:hover{
     color: var(--color-white);
@@ -181,6 +193,7 @@ ul {
     font-size: var(--font-size-s);
     padding: 2rem;
     line-height: 25px;
+    cursor: pointer;
 }
 .popover-close img {
     display:inline-block;
