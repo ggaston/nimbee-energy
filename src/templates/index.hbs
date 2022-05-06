@@ -4,14 +4,49 @@ data: cs/index.json
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Starter Snowpack App" />
-    <title>Starter Snowpack App</title>
-  </head>
-  <body>
-    {{> header lang="cs"}}
-    <h1>{{{headline}}}</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Starter Snowpack App" />
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+  <!-- Milligram CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Starter Snowpack App</title>
+</head>
+
+<body>
+  <div>
+    <header>
+      <div class="container">
+        {{> header lang="cs"}}
+      </div></header>
+    <main>
+      <div class="hero">
+        <div class="container">
+          <h1>{{{headline}}}</h1>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="container">
+          <div class="cards row">
+            {{#each cards}}
+            <div class="column">{{> card}}</div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      {{> footer}}
+    </footer>
+    
+  </div>
+</body>
+
 </html>
