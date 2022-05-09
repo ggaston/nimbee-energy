@@ -19,10 +19,12 @@
   },
   "homepage": "https://github.com/ggaston/nimbee-energy#readme",
   "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.4.3",
     "csv-parse": "^4.14.2",
     "fs-extra": "^10.1.0",
     "handlebars": "^4.7.7",
     "handlebars-helpers": "^0.10.0",
+    "postcss": "^8.4.13",
     "snowpack": "^3.8.8",
     "yamljs": "^0.3.0"
   }
