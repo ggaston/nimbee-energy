@@ -20,6 +20,9 @@
   "homepage": "https://github.com/ggaston/nimbee-energy#readme",
   "devDependencies": {
     "@snowpack/plugin-postcss": "^1.4.3",
+    "autoprefixer": "^10.4.7",
+    "browserlist": "^1.0.1",
+    "cssnano": "^5.1.7",
     "csv-parse": "^4.14.2",
     "fs-extra": "^10.1.0",
     "handlebars": "^4.7.7",

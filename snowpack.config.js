@@ -11,6 +11,7 @@ module.exports = {
     'src/assets': '/assets'
   },
   plugins: [
+    '@snowpack/plugin-postcss',
     ['./snowpack-hsb-plugin/index.js', {
       srcPath: './src',
       outputPath: './public'
