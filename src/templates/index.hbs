@@ -20,10 +20,19 @@ data: cs/index.json
 
 <body>
   <div>
+    <div class="section-top">
     <header>
       <div class="container">
         {{> header lang="cs"}}
-      </div></header>
+      </div>
+      <div class="video-container">
+        <video preload="yes" autoplay playsinline loop muted class="video-hero">
+          <source src="../assets/video/overlay_denoiser.mp4" type="video/mp4">
+          <p>Váš prohlížeč nepodporuje HTML5 video</p>
+        </video>
+        <div class="video-cover"></div>
+      </div>
+      </header>
     <main>
       <div class="hero">
         <div class="container">
@@ -42,6 +51,7 @@ data: cs/index.json
         </div>
       </div>
     </main>
+    </div>
 
     <footer class="footer">
       {{> footer}}
