@@ -1,0 +1,165 @@
+.slide-up {
+    -webkit-transform: translateY(200px);
+       -moz-transform: translateY(200px);
+        -ms-transform: translateY(200px);
+         -o-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: opacity, -o-transform;
+    -moz-transition-property: transform, opacity, -moz-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform, -moz-transform, -o-transform;
+    -webkit-transition-duration: 1s;
+       -moz-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+       -moz-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+         -o-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+            transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.slide-up.in-view {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+.slide-up:nth-child(1) {
+    -webkit-transition-delay: 0s;
+       -moz-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
+}
+.slide-up:nth-child(2) {
+    -webkit-transition-delay: .25s;
+       -moz-transition-delay: .25s;
+         -o-transition-delay: .25s;
+            transition-delay: .25s;
+}
+.slide-up:nth-child(3) {
+    -webkit-transition-delay: .5s;
+       -moz-transition-delay: .5s;
+         -o-transition-delay: .5s;
+            transition-delay: .5s;
+}
+
+
+/* Minimal slide up */
+.slide-up-mini {
+    -webkit-transform: translateY(10px);
+       -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+         -o-transform: translateY(10px);
+            transform: translateY(10px);
+    opacity: 0;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: opacity, -o-transform;
+    -moz-transition-property: transform, opacity, -moz-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform, -moz-transform, -o-transform;
+    -webkit-transition-duration: 1s;
+       -moz-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+       -moz-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+         -o-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+            transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.in-view .slide-up-mini {
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+.column:nth-child(1) .slide-up-mini {
+    -webkit-transition-delay: .5s;
+       -moz-transition-delay: .5s;
+         -o-transition-delay: .5s;
+            transition-delay: .5s;
+}
+.column:nth-child(2) .slide-up-mini {
+    -webkit-transition-delay: .75s;
+       -moz-transition-delay: .75s;
+         -o-transition-delay: .75s;
+            transition-delay: .75s;
+}
+.column:nth-child(3) .slide-up-mini {
+    -webkit-transition-delay: 1s;
+       -moz-transition-delay: 1s;
+         -o-transition-delay: 1s;
+            transition-delay: 1s;
+}
+
+/* fade out */
+.fade-out {
+    opacity: .6;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 1s;
+       -moz-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+       -moz-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+         -o-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+            transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.in-view .fade-out {
+    opacity: 0;
+}
+.column:nth-child(1) .fade-out {
+    -webkit-transition-delay: 1s;
+       -moz-transition-delay: 1s;
+         -o-transition-delay: 1s;
+            transition-delay: 1s;
+}
+.column:nth-child(2) .fade-out {
+    -webkit-transition-delay: 1.25s;
+       -moz-transition-delay: 1.25s;
+         -o-transition-delay: 1.25s;
+            transition-delay: 1.25s;
+}
+.column:nth-child(3) .fade-out {
+    -webkit-transition-delay: 1.5s;
+       -moz-transition-delay: 1.5s;
+         -o-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+}
+
+/* fade in */
+.fade-in {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 1s;
+       -moz-transition-duration: 1s;
+         -o-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+       -moz-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+         -o-transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+            transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.card:hover .card-reveal-content.fade-in {
+    opacity: 1;
+}
+
+.card:hover .card-overlay.fade-in {
+    opacity: .6;
+    -webkit-transition-delay: 0s;
+       -moz-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s;
+}

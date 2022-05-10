@@ -21,79 +21,89 @@ data: cs/index.json
 <body>
   <div>
     <div class="section-top">
-    <header>
-      <div class="container">
-        {{> header lang="cs"}}
-      </div>
-      <div class="video-container">
-        <video preload="yes" autoplay playsinline loop muted class="video-hero">
-          <source src="assets/video/overlay_denoiser.mp4" type="video/mp4">
-          <p>Váš prohlížeč nepodporuje HTML5 video</p>
-        </video>
-        <div class="video-cover"></div>
-      </div>
+      <header>
+        <div class="container">
+          {{> header lang="cs"}}
+        </div>
+        <div class="video-container">
+          <video preload="yes" autoplay playsinline loop muted class="video-hero">
+            <source src="assets/video/overlay_denoiser.mp4" type="video/mp4">
+            <p>Váš prohlížeč nepodporuje HTML5 video</p>
+          </video>
+          <div class="video-cover"></div>
+        </div>
       </header>
-    <main>
-      <div class="hero">
-        <div class="container">
-          <h1>{{{headline}}}</h1>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="container">
-          <div class="cards row">
-            {{#each cards}}
-            <div class="column">{{> card}}</div>
-            {{/each}}
+      <main>
+        <div class="hero">
+          <div class="container">
+            <h1>{{{headline}}}</h1>
           </div>
-          {{> popover}}
         </div>
-      </div>
-    </main>
+
+        <div class="content">
+          <div class="container">
+            <div class="cards row">
+              {{#each cards}}
+              <div class="column slide-up">{{> card}}</div>
+              {{/each}}
+            </div>
+            {{> popover}}
+          </div>
+        </div>
+      </main>
     </div>
 
     <footer class="footer">
       {{> footer}}
     </footer>
-    
+
   </div>
   <script>
-    (function(){
+    (function () {
       let openBtn = document.querySelector('[data-action="open"][data-action-target="popover"]');
       let closeBtn = document.querySelector('[data-action="close"][data-action-target="popover"]');
       let popover = document.querySelector('[data-component="popover"]');
-      
+
       openBtn.addEventListener('click', openPopover)
       closeBtn.addEventListener('click', closePopover)
       document.body.addEventListener('click', closePopover)
-      document.addEventListener('keydown', function(e){
-        if(e.keyCode === 27) {
+      document.addEventListener('keydown', function (e) {
+        if (e.keyCode === 27) {
           closePopover(e)
         }
       });
 
-      function openPopover(e){
-        e.stopPropagation() 
+      function openPopover(e) {
+        e.stopPropagation()
         let dataTarget = e.currentTarget.dataset;
         let el = document.querySelector('[data-component="' + dataTarget.actionTarget + '"]')
 
-        if(el) {
+        if (el) {
           el.dataset.componentState = 'open'
         }
       }
 
-      function closePopover(e){
+      function closePopover(e) {
         let el = document.querySelector('[data-component="popover"]')
 
-        if(el) {
+        if (el) {
           el.dataset.componentState = 'closed'
         }
       }
 
-      popover.addEventListener('click', function(e){
+      popover.addEventListener('click', function (e) {
         e.stopPropagation()
       })
+
+    })();
+
+    (function () {
+      let slides = document.querySelectorAll('.slide-up');
+      const timeout = setTimeout(() => {
+        [].forEach.call(slides, (el) => {
+          el.classList.add('in-view');
+        });
+      }, 0)
 
     })()
   </script>

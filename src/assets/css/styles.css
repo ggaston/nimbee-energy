@@ -1,4 +1,5 @@
 @import url('fonts.css');
+@import url('animations.css');
 
 :root {
     --color-green-light: #77b631;
@@ -35,14 +36,12 @@
 
 body {
     background: 
-        linear-gradient(217deg, var(--color-green-light), var(--color-green-dark) 70.71%),
+        linear-gradient(217deg, var(--color-green-light), var(--color-green-dark) 22.71%),
         linear-gradient(127deg, var(--color-green-dark), transparent 70.71%),
         linear-gradient(336deg, var(--color-green-dark), transparent 70.71%);
     font-family: var(--font-family);
     color: var(--font-color);
 }
-
-
 
 /** extend Miligram **/
 
@@ -174,11 +173,22 @@ ul {
     padding-bottom: 9rem;
 }
 
+.cards {
+    display: flex;
+}
+
+.cards .column {
+    overflow: hidden;
+}
+
 .card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     border-radius: 4px;
+    height: 100%;
+    background-color: var(--card-bg-color);
     overflow: hidden;
-    background-color: var(--color-black);
 }
 
 @media (max-width: 900px) {
@@ -188,23 +198,24 @@ ul {
     }
   }
 
-.card:hover .card-img{
-    opacity: .4;
-}
 .card-reveal {
-    /* visibility: hidden; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 60%;
-    color: var(--color-white);
+    position: relative;
     font-size: clamp(var(--font-size-xs), 1.5vw, var(--font-size-s));
+    min-height: 250px;
+    flex-grow: 1;
 }
+
+.card-reveal-container {
+    padding: 6rem 5rem 5rem;
+    height: 100%;
+}
+
 .card-reveal-content {
-    width: 80%;
+   
+   position: relative;
+   z-index: 2;
+   height: 100%;
+   color: var(--color-white);
 }
 .card-reveal-content p {
     margin-bottom: 2rem;
@@ -214,6 +225,18 @@ ul {
         font-size: 1.5rem;
     }
 }
+
+.card-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-black);
+    opacity: 0.5
+}
+
 .card-link {
     float: right;
     color: var(--color-white);
@@ -231,10 +254,6 @@ ul {
 
 .card:hover .card-reveal {
     visibility: visible;
-}
-
-.card-content {
-    background-color: var(--card-bg-color);
 }
 
 .card-img {

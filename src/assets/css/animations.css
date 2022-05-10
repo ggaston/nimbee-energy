@@ -1,0 +1,79 @@
+.slide-up {
+    transform: translateY(200px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.slide-up.in-view {
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide-up:nth-child(1) {
+    transition-delay: 0s;
+}
+.slide-up:nth-child(2) {
+    transition-delay: .25s;
+}
+.slide-up:nth-child(3) {
+    transition-delay: .5s;
+}
+
+
+/* Minimal slide up */
+.slide-up-mini {
+    transform: translateY(10px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.in-view .slide-up-mini {
+    transform: translateY(0);
+    opacity: 1;
+}
+.column:nth-child(1) .slide-up-mini {
+    transition-delay: .5s;
+}
+.column:nth-child(2) .slide-up-mini {
+    transition-delay: .75s;
+}
+.column:nth-child(3) .slide-up-mini {
+    transition-delay: 1s;
+}
+
+/* fade out */
+.fade-out {
+    opacity: .6;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.in-view .fade-out {
+    opacity: 0;
+}
+.column:nth-child(1) .fade-out {
+    transition-delay: 1s;
+}
+.column:nth-child(2) .fade-out {
+    transition-delay: 1.25s;
+}
+.column:nth-child(3) .fade-out {
+    transition-delay: 1.5s;
+}
+
+/* fade in */
+.fade-in {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.070, 0.82, 0.92, 1);
+}
+.card:hover .card-reveal-content.fade-in {
+    opacity: 1;
+}
+
+.card:hover .card-overlay.fade-in {
+    opacity: .6;
+    transition-delay: 0s;
+}

@@ -1,20 +1,26 @@
 <div class="card" {{#if @first}}data-action="open" data-action-target="popover"{{/if}}>
     <div class="card-content">
         <img src="assets/img/ico-plus.svg" class="card-ico">
-        <h2 class="card-headline">{{this.headline}}</h2>
+        <h2 class="card-headline slide-up-mini">{{this.headline}}</h2>
     </div>
-    <img class="card-img" src="assets/img/img-card-{{@index}}.jpg" />
-    <div class="card-reveal">
-        <div class="card-reveal-content">
-            <p>{{this.text}}</p>
-            {{#if this.popover}}
-                <span class="card-link">{{this.link}}<img src="assets/img/ico-caret.svg" alt=""
-                    class="card-link-ico"></span>
-            {{else}}
-                 <a href="#" class="card-link">{{this.link}}<img src="assets/img/ico-link.svg" alt=""
-                    class="card-link-ico"></a>
-            {{/if}}
-            
+   
+    <div class="card-reveal" style="
+        background-image:url(assets/img/img-card-{{@index}}.jpg);
+        background-size: cover;
+        background-position: right top;">
+        <div class="card-overlay fade-out fade-in"></div>
+        
+        <div class="card-reveal-container">
+            <div class="card-reveal-content fade-in">
+                <p>{{this.text}}</p>
+                {{#if this.popover}}
+                    <span class="card-link">{{this.link}}<img src="assets/img/ico-caret.svg" alt=""
+                        class="card-link-ico"></span>
+                {{else}}
+                    <a href="#" class="card-link">{{this.link}}<img src="assets/img/ico-link.svg" alt=""
+                        class="card-link-ico"></a>
+                {{/if}}
+            </div>
         </div>
     </div>
 </div>
