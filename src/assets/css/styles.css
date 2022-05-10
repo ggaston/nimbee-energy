@@ -198,7 +198,9 @@ ul {
     }
   }
 
-.card  a{
+  a.stretched-link,
+  a.stretched-link:visited,
+  a.stretched-link:hover {
     text-decoration: none;
     color: var(--color-white);
 }
@@ -216,11 +218,11 @@ ul {
 }
 
 .card-reveal-content {
-   
    position: relative;
    z-index: 2;
    height: 100%;
    color: var(--color-white);
+   font-weight: 400;
 }
 .card-reveal-content p {
     margin-bottom: 2rem;
@@ -290,6 +292,7 @@ ul {
     margin-right: 2rem;
     border-radius: 4px;
     overflow: hidden;
+    font-weight: 400;
 }
 .popover[data-component-state="open"]{
     display: block;

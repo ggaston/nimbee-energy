@@ -1,5 +1,5 @@
 {{#if linkUrl}}
-<a href="{{linkUrl}}">
+<a href="{{linkUrl}}" class="stretched-link">
 {{/if}}
 <div class="card" {{#if this.popover}}data-action="open" data-action-target="popover" {{/if}}>
 
@@ -21,8 +21,8 @@
                 <span class="card-link">{{this.link}}<img src="assets/img/ico-caret.svg" alt=""
                         class="card-link-ico"></span>
                 {{else}}
-                <a href="#" class="card-link">{{this.link}}<img src="assets/img/ico-link.svg" alt=""
-                        class="card-link-ico"></a>
+                <span class="card-link">{{this.link}}<img src="assets/img/ico-link.svg" alt=""
+                        class="card-link-ico"></span>
                 {{/if}}
             </div>
         </div>
