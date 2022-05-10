@@ -37,7 +37,7 @@
   "footer": {
     "followUs": "Follow us",
     "contact": "Contact",
-    "contacts": "JUNGMANNOVA 26/15, 110 00 PRAHA<br>tel.: +420 603 404 371<br>e-mail: info@nimble-energy.cz",
+    "contacts": "JUNGMANNOVA 26/15, 110 00 PRAHA<br>tel.: +420 603 404 371<br>e-mail: <a href='mailto:info@nimble-energy.cz'>info@nimble-energy.cz</a>",
     "linkedInLink": "https://www.linkedin.com/company/nimble-energy/",
     "privacy":"Learn more about the cookies in Our ",
     "privacyLink": "Privacy Policy",
