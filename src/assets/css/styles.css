@@ -198,6 +198,11 @@ ul {
     }
   }
 
+.card  a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 .card-reveal {
     position: relative;
     font-size: clamp(var(--font-size-xs), 1.5vw, var(--font-size-s));
@@ -273,6 +278,10 @@ ul {
 }
 
 /* Popover */
+[data-action="open"] {
+    cursor: pointer;
+}
+
 .popover {
     position: absolute;
     top: 0;
@@ -329,6 +338,10 @@ ul {
 
 .logo-footer {
     width: 150px;
+}
+
+.privacy-link {
+    font-weight: 700;
 }
 
 @media (max-width: 900px) {

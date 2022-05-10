@@ -18,5 +18,8 @@ module.exports = {
         handlebars.registerHelper('ne', function(a, b) {
         return (a !== b);
         });
+        handlebars.registerHelper('notdefined', function(value) {
+        return value === undefined;
+        });
     }
 }

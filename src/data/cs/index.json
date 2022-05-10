@@ -11,13 +11,14 @@
     {
       "headline": "Chytré nabíjení",
       "text": "Charging stations for households and companies. One-stop shop and consultation boutique – from selection through installation to happy charging.",
-      "link": "Visit website"
+      "link": "Visit website",
+      "linkUrl": "https://www.chytre-nabijeni.cz/"
     },
     {
       "headline": "Nimbee",
       "text": "Fast mobile charging service that will keep your EV charged, wherever and whenever you park. Revolutionary solution to enrich the neglected in-city public charging arena.",
-      "link": "Visit website"
-
+      "link": "Visit website",
+      "linkUrl": "https://www.chytre-nabijeni.cz/"
     }
   ],
   "cardsInfo": [
@@ -37,6 +38,7 @@
     "followUs": "Follow us",
     "contact": "Contact",
     "contacts": "JUNGMANNOVA 26/15, 110 00 PRAHA<br>tel.: +420 603 404 371<br>e-mail: info@nimble-energy.cz",
+    "linkedInLink": "https://www.linkedin.com/company/nimble-energy/",
     "privacy":"Learn more about the cookies in Our ",
     "privacyLink": "Privacy Policy",
     "copyrigth":"Copyright © 2022 Nimble Energy s.r.o."
