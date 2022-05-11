@@ -255,11 +255,14 @@ ul {
         max-width: 40rem;
         margin: 0 auto 4rem;
     }
+    .cards a.stretched-link {
+        margin-bottom: 4rem;
+    }
   }
 
-  a.stretched-link,
-  a.stretched-link:visited,
-  a.stretched-link:hover {
+  .cards a.stretched-link,
+  .cards a.stretched-link:visited,
+  .cards a.stretched-link:hover {
     text-decoration: none;
     color: var(--color-white);
 }
@@ -402,7 +405,7 @@ ul {
     background-color: var(--footer-bg-color);
     color: var(--font-footer-color);
     font-size: var(--font-size-s);
-    min-height: 30vh;
+    min-height: 70vh;
 }
 .footer h4,
 .footer a {
