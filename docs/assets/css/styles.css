@@ -405,7 +405,7 @@ ul {
     background-color: var(--footer-bg-color);
     color: var(--font-footer-color);
     font-size: var(--font-size-s);
-    min-height: 70vh;
+    min-height: 30vh;
 }
 .footer h4,
 .footer a {
