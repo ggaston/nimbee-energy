@@ -30,8 +30,7 @@
     --font-size-s: 1.4rem;
     --font-size-xs: 1.2rem;
 
-    --font-family: Gotham, Avenir, sans-serif;
-    
+    --font-family: Gotham, serif;
 }
 
 body {
@@ -53,6 +52,7 @@ body {
         linear-gradient(336deg, var(--color-green-dark), transparent 70.71%);
     font-family: var(--font-family);
     color: var(--font-color);
+    min-height: 100vh;
 }
 
 /** extend Miligram **/
@@ -120,6 +120,11 @@ body {
     max-width: 1200px;
     margin: auto;
 }
+.section-top {
+    position: relative;
+    min-height: 70vh;
+}
+
 
 /* typography */
 h1 {
@@ -158,10 +163,6 @@ ul {
     height: 100%;
     top: 0;
     left: 0;
-}
-
-.section-top {
-    position: relative;
 }
 
 .video-hero {
@@ -401,6 +402,7 @@ ul {
     background-color: var(--footer-bg-color);
     color: var(--font-footer-color);
     font-size: var(--font-size-s);
+    min-height: 30vh;
 }
 .footer h4,
 .footer a {
